@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script>
+            $(function(){
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+    </head>
+    <body>
+        <a href="#" data-toggle="tooltip" title="Tooltip">Tooltip</a><br>
+        <br>
+        <button class="btn btn-primary" data-toggle="tooltip" title="Tooltip">Tooltip</button>
+        <button class="btn btn-primary" data-toggle="tooltip" title="Tooltip with <span class='badge badge-primary'>badge</span>" data-html="true">Tooltip</button>
+        <button class="btn btn-primary" data-toggle="tooltip" title="Tooltip"  data-animation="false" data-delay="500" data-trigger="click">Tooltip</button>
+    </body>
+</html>

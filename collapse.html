@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <a href="#collapsediv" class="btn btn-primary" aria-controls="#collapsediv" data-toggle="collapse">link collapse</a>
+        <div id="collapsediv" class="collapse">
+            <div class="alert alert-success">This is sample test for collapse</div>
+        </div>
+        <button data-target="#collapsediv2" class="btn btn-primary" aria-controls="#collapsediv2" data-toggle="collapse">Button collapse</button>
+        <div id="collapsediv2" class="collapse">
+            <div class="alert alert-success">This is sample test for collapse</div>
+        </div>
+        <button data-target=".multiple-collapse" class="btn btn-primary" aria-controls="#collapsediv3 #collapsediv4" data-toggle="collapse">Button collapse</button>
+        <div id="collapsediv3" class="collapse multiple-collapse">
+            <div class="alert alert-success">This is sample test for collapse</div>
+        </div>
+        <div id="collapsediv4" class="collapse multiple-collapse">
+            <div class="alert alert-success">This is sample test for collapse</div>
+        </div>
+        <br>
+        <br>
+        <div class="accordion" id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <button data-toggle="collapse" data-target="#collapse1" aria-controls="#collapse1" class=" btn btn-link ">Heading button</button>
+                </div>
+                <div id="collapse1" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>this is a sample text for body of card</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <button data-toggle="collapse" data-target="#collapse2" aria-controls="#collapse2" class=" btn btn-link ">Heading button</button>
+                </div>
+                <div id="collapse2" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>this is a sample text for body of card</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <button data-toggle="collapse" data-target="#collapse3" aria-controls="#collapse3" class=" btn btn-link ">Heading button</button>
+                </div>
+                <div id="collapse3" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>this is a sample text for body of card</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
